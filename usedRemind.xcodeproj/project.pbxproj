@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02B67E5E16638A5700FC8807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5D16638A5700FC8807 /* UIKit.framework */; };
+		02B67E6016638A5700FC8807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5F16638A5700FC8807 /* Foundation.framework */; };
+		02B67E6216638A5700FC8807 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E6116638A5700FC8807 /* CoreGraphics.framework */; };
+		02B67E6816638A5700FC8807 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E6616638A5700FC8807 /* InfoPlist.strings */; };
+		02B67E6A16638A5700FC8807 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B67E6916638A5700FC8807 /* main.m */; };
+		02B67E6E16638A5700FC8807 /* SYGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B67E6D16638A5700FC8807 /* SYGAppDelegate.m */; };
+		02B67E7016638A5700FC8807 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E6F16638A5700FC8807 /* Default.png */; };
+		02B67E7216638A5700FC8807 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E7116638A5700FC8807 /* Default@2x.png */; };
+		02B67E7416638A5700FC8807 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E7316638A5700FC8807 /* Default-568h@2x.png */; };
+		02B67E7716638A5800FC8807 /* SYGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B67E7616638A5800FC8807 /* SYGViewController.m */; };
+		02B67E7A16638A5800FC8807 /* SYGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E7816638A5800FC8807 /* SYGViewController.xib */; };
+		02B67E8216638A5800FC8807 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E8116638A5800FC8807 /* SenTestingKit.framework */; };
+		02B67E8316638A5800FC8807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5D16638A5700FC8807 /* UIKit.framework */; };
+		02B67E8416638A5800FC8807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5F16638A5700FC8807 /* Foundation.framework */; };
+		02B67E8C16638A5800FC8807 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E8A16638A5800FC8807 /* InfoPlist.strings */; };
+		02B67E8F16638A5800FC8807 /* usedRemindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B67E8E16638A5800FC8807 /* usedRemindTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02B67E8516638A5800FC8807 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02B67E5016638A5700FC8807 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02B67E5816638A5700FC8807;
+			remoteInfo = usedRemind;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B67E5916638A5700FC8807 /* usedRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usedRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B67E5D16638A5700FC8807 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02B67E5F16638A5700FC8807 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02B67E6116638A5700FC8807 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02B67E6516638A5700FC8807 /* usedRemind-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "usedRemind-Info.plist"; sourceTree = "<group>"; };
+		02B67E6716638A5700FC8807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02B67E6916638A5700FC8807 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		02B67E6B16638A5700FC8807 /* usedRemind-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "usedRemind-Prefix.pch"; sourceTree = "<group>"; };
+		02B67E6C16638A5700FC8807 /* SYGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGAppDelegate.h; sourceTree = "<group>"; };
+		02B67E6D16638A5700FC8807 /* SYGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGAppDelegate.m; sourceTree = "<group>"; };
+		02B67E6F16638A5700FC8807 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		02B67E7116638A5700FC8807 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		02B67E7316638A5700FC8807 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		02B67E7516638A5700FC8807 /* SYGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGViewController.h; sourceTree = "<group>"; };
+		02B67E7616638A5800FC8807 /* SYGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGViewController.m; sourceTree = "<group>"; };
+		02B67E7916638A5800FC8807 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYGViewController.xib; sourceTree = "<group>"; };
+		02B67E8016638A5800FC8807 /* usedRemindTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usedRemindTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B67E8116638A5800FC8807 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		02B67E8916638A5800FC8807 /* usedRemindTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "usedRemindTests-Info.plist"; sourceTree = "<group>"; };
+		02B67E8B16638A5800FC8807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		02B67E8D16638A5800FC8807 /* usedRemindTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = usedRemindTests.h; sourceTree = "<group>"; };
+		02B67E8E16638A5800FC8807 /* usedRemindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = usedRemindTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02B67E5616638A5700FC8807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B67E5E16638A5700FC8807 /* UIKit.framework in Frameworks */,
+				02B67E6016638A5700FC8807 /* Foundation.framework in Frameworks */,
+				02B67E6216638A5700FC8807 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B67E7C16638A5800FC8807 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B67E8216638A5800FC8807 /* SenTestingKit.framework in Frameworks */,
+				02B67E8316638A5800FC8807 /* UIKit.framework in Frameworks */,
+				02B67E8416638A5800FC8807 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02B67E4E16638A5700FC8807 = {
+			isa = PBXGroup;
+			children = (
+				02B67E6316638A5700FC8807 /* usedRemind */,
+				02B67E8716638A5800FC8807 /* usedRemindTests */,
+				02B67E5C16638A5700FC8807 /* Frameworks */,
+				02B67E5A16638A5700FC8807 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02B67E5A16638A5700FC8807 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02B67E5916638A5700FC8807 /* usedRemind.app */,
+				02B67E8016638A5800FC8807 /* usedRemindTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02B67E5C16638A5700FC8807 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02B67E5D16638A5700FC8807 /* UIKit.framework */,
+				02B67E5F16638A5700FC8807 /* Foundation.framework */,
+				02B67E6116638A5700FC8807 /* CoreGraphics.framework */,
+				02B67E8116638A5800FC8807 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02B67E6316638A5700FC8807 /* usedRemind */ = {
+			isa = PBXGroup;
+			children = (
+				02B67E6C16638A5700FC8807 /* SYGAppDelegate.h */,
+				02B67E6D16638A5700FC8807 /* SYGAppDelegate.m */,
+				02B67E7516638A5700FC8807 /* SYGViewController.h */,
+				02B67E7616638A5800FC8807 /* SYGViewController.m */,
+				02B67E7816638A5800FC8807 /* SYGViewController.xib */,
+				02B67E6416638A5700FC8807 /* Supporting Files */,
+			);
+			path = usedRemind;
+			sourceTree = "<group>";
+		};
+		02B67E6416638A5700FC8807 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02B67E6516638A5700FC8807 /* usedRemind-Info.plist */,
+				02B67E6616638A5700FC8807 /* InfoPlist.strings */,
+				02B67E6916638A5700FC8807 /* main.m */,
+				02B67E6B16638A5700FC8807 /* usedRemind-Prefix.pch */,
+				02B67E6F16638A5700FC8807 /* Default.png */,
+				02B67E7116638A5700FC8807 /* Default@2x.png */,
+				02B67E7316638A5700FC8807 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02B67E8716638A5800FC8807 /* usedRemindTests */ = {
+			isa = PBXGroup;
+			children = (
+				02B67E8D16638A5800FC8807 /* usedRemindTests.h */,
+				02B67E8E16638A5800FC8807 /* usedRemindTests.m */,
+				02B67E8816638A5800FC8807 /* Supporting Files */,
+			);
+			path = usedRemindTests;
+			sourceTree = "<group>";
+		};
+		02B67E8816638A5800FC8807 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02B67E8916638A5800FC8807 /* usedRemindTests-Info.plist */,
+				02B67E8A16638A5800FC8807 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02B67E5816638A5700FC8807 /* usedRemind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02B67E9216638A5800FC8807 /* Build configuration list for PBXNativeTarget "usedRemind" */;
+			buildPhases = (
+				02B67E5516638A5700FC8807 /* Sources */,
+				02B67E5616638A5700FC8807 /* Frameworks */,
+				02B67E5716638A5700FC8807 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = usedRemind;
+			productName = usedRemind;
+			productReference = 02B67E5916638A5700FC8807 /* usedRemind.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02B67E7F16638A5800FC8807 /* usedRemindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02B67E9516638A5800FC8807 /* Build configuration list for PBXNativeTarget "usedRemindTests" */;
+			buildPhases = (
+				02B67E7B16638A5800FC8807 /* Sources */,
+				02B67E7C16638A5800FC8807 /* Frameworks */,
+				02B67E7D16638A5800FC8807 /* Resources */,
+				02B67E7E16638A5800FC8807 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02B67E8616638A5800FC8807 /* PBXTargetDependency */,
+			);
+			name = usedRemindTests;
+			productName = usedRemindTests;
+			productReference = 02B67E8016638A5800FC8807 /* usedRemindTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02B67E5016638A5700FC8807 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SYG;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = dacaiguoguo;
+			};
+			buildConfigurationList = 02B67E5316638A5700FC8807 /* Build configuration list for PBXProject "usedRemind" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 02B67E4E16638A5700FC8807;
+			productRefGroup = 02B67E5A16638A5700FC8807 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02B67E5816638A5700FC8807 /* usedRemind */,
+				02B67E7F16638A5800FC8807 /* usedRemindTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02B67E5716638A5700FC8807 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B67E6816638A5700FC8807 /* InfoPlist.strings in Resources */,
+				02B67E7016638A5700FC8807 /* Default.png in Resources */,
+				02B67E7216638A5700FC8807 /* Default@2x.png in Resources */,
+				02B67E7416638A5700FC8807 /* Default-568h@2x.png in Resources */,
+				02B67E7A16638A5800FC8807 /* SYGViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B67E7D16638A5800FC8807 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B67E8C16638A5800FC8807 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B67E7E16638A5800FC8807 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02B67E5516638A5700FC8807 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B67E6A16638A5700FC8807 /* main.m in Sources */,
+				02B67E6E16638A5700FC8807 /* SYGAppDelegate.m in Sources */,
+				02B67E7716638A5800FC8807 /* SYGViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02B67E7B16638A5800FC8807 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02B67E8F16638A5800FC8807 /* usedRemindTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02B67E8616638A5800FC8807 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02B67E5816638A5700FC8807 /* usedRemind */;
+			targetProxy = 02B67E8516638A5800FC8807 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02B67E6616638A5700FC8807 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B67E6716638A5700FC8807 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		02B67E7816638A5800FC8807 /* SYGViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B67E7916638A5800FC8807 /* en */,
+			);
+			name = SYGViewController.xib;
+			sourceTree = "<group>";
+		};
+		02B67E8A16638A5800FC8807 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02B67E8B16638A5800FC8807 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02B67E9016638A5800FC8807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		02B67E9116638A5800FC8807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02B67E9316638A5800FC8807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usedRemind/usedRemind-Prefix.pch";
+				INFOPLIST_FILE = "usedRemind/usedRemind-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		02B67E9416638A5800FC8807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usedRemind/usedRemind-Prefix.pch";
+				INFOPLIST_FILE = "usedRemind/usedRemind-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		02B67E9616638A5800FC8807 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/usedRemind.app/usedRemind";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usedRemind/usedRemind-Prefix.pch";
+				INFOPLIST_FILE = "usedRemindTests/usedRemindTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		02B67E9716638A5800FC8807 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/usedRemind.app/usedRemind";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "usedRemind/usedRemind-Prefix.pch";
+				INFOPLIST_FILE = "usedRemindTests/usedRemindTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02B67E5316638A5700FC8807 /* Build configuration list for PBXProject "usedRemind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B67E9016638A5800FC8807 /* Debug */,
+				02B67E9116638A5800FC8807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02B67E9216638A5800FC8807 /* Build configuration list for PBXNativeTarget "usedRemind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B67E9316638A5800FC8807 /* Debug */,
+				02B67E9416638A5800FC8807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		02B67E9516638A5800FC8807 /* Build configuration list for PBXNativeTarget "usedRemindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02B67E9616638A5800FC8807 /* Debug */,
+				02B67E9716638A5800FC8807 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02B67E5016638A5700FC8807 /* Project object */;
+}
