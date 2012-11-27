@@ -8,14 +8,14 @@
 
 #import "SYGAppDelegate.h"
 
-#import "SYGViewController.h"
+#import "SYGTableViewController.h"
 
 @implementation SYGAppDelegate
 
 - (void)dealloc
 {
     [_window release];
-    [_viewController release];
+    [_iNavViewController release];
     [super dealloc];
 }
 
@@ -23,8 +23,9 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.viewController = [[[SYGViewController alloc] initWithNibName:@"SYGViewController" bundle:nil] autorelease];
-    self.window.rootViewController = self.viewController;
+    SYGTableViewController *aViewController = [[[SYGTableViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+    self.iNavViewController = [[[UINavigationController alloc] initWithRootViewController:aViewController] autorelease];
+    self.window.rootViewController = self.iNavViewController;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02012E8716645780007B47F7 /* cellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02012E8616645780007B47F7 /* cellView.xib */; };
 		02B67E5E16638A5700FC8807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5D16638A5700FC8807 /* UIKit.framework */; };
 		02B67E6016638A5700FC8807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5F16638A5700FC8807 /* Foundation.framework */; };
 		02B67E6216638A5700FC8807 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E6116638A5700FC8807 /* CoreGraphics.framework */; };
@@ -16,13 +17,14 @@
 		02B67E7016638A5700FC8807 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E6F16638A5700FC8807 /* Default.png */; };
 		02B67E7216638A5700FC8807 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E7116638A5700FC8807 /* Default@2x.png */; };
 		02B67E7416638A5700FC8807 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E7316638A5700FC8807 /* Default-568h@2x.png */; };
-		02B67E7716638A5800FC8807 /* SYGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B67E7616638A5800FC8807 /* SYGViewController.m */; };
-		02B67E7A16638A5800FC8807 /* SYGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E7816638A5800FC8807 /* SYGViewController.xib */; };
 		02B67E8216638A5800FC8807 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E8116638A5800FC8807 /* SenTestingKit.framework */; };
 		02B67E8316638A5800FC8807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5D16638A5700FC8807 /* UIKit.framework */; };
 		02B67E8416638A5800FC8807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5F16638A5700FC8807 /* Foundation.framework */; };
 		02B67E8C16638A5800FC8807 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02B67E8A16638A5800FC8807 /* InfoPlist.strings */; };
 		02B67E8F16638A5800FC8807 /* usedRemindTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B67E8E16638A5800FC8807 /* usedRemindTests.m */; };
+		02B67E9916638A6C00FC8807 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E9816638A6C00FC8807 /* EventKit.framework */; };
+		02D8B581166398E7003FDCF7 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D8B580166398E7003FDCF7 /* EventKitUI.framework */; };
+		02D8B58A16639D93003FDCF7 /* SYGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8B58916639D93003FDCF7 /* SYGTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02012E8616645780007B47F7 /* cellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellView.xib; sourceTree = "<group>"; };
 		02B67E5916638A5700FC8807 /* usedRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usedRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B67E5D16638A5700FC8807 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02B67E5F16638A5700FC8807 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,15 +52,16 @@
 		02B67E6F16638A5700FC8807 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		02B67E7116638A5700FC8807 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		02B67E7316638A5700FC8807 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		02B67E7516638A5700FC8807 /* SYGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGViewController.h; sourceTree = "<group>"; };
-		02B67E7616638A5800FC8807 /* SYGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGViewController.m; sourceTree = "<group>"; };
-		02B67E7916638A5800FC8807 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SYGViewController.xib; sourceTree = "<group>"; };
 		02B67E8016638A5800FC8807 /* usedRemindTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usedRemindTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B67E8116638A5800FC8807 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		02B67E8916638A5800FC8807 /* usedRemindTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "usedRemindTests-Info.plist"; sourceTree = "<group>"; };
 		02B67E8B16638A5800FC8807 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		02B67E8D16638A5800FC8807 /* usedRemindTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = usedRemindTests.h; sourceTree = "<group>"; };
 		02B67E8E16638A5800FC8807 /* usedRemindTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = usedRemindTests.m; sourceTree = "<group>"; };
+		02B67E9816638A6C00FC8807 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		02D8B580166398E7003FDCF7 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		02D8B58816639D93003FDCF7 /* SYGTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGTableViewController.h; sourceTree = "<group>"; };
+		02D8B58916639D93003FDCF7 /* SYGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D8B581166398E7003FDCF7 /* EventKitUI.framework in Frameworks */,
+				02B67E9916638A6C00FC8807 /* EventKit.framework in Frameworks */,
 				02B67E5E16638A5700FC8807 /* UIKit.framework in Frameworks */,
 				02B67E6016638A5700FC8807 /* Foundation.framework in Frameworks */,
 				02B67E6216638A5700FC8807 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +112,8 @@
 		02B67E5C16638A5700FC8807 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02D8B580166398E7003FDCF7 /* EventKitUI.framework */,
+				02B67E9816638A6C00FC8807 /* EventKit.framework */,
 				02B67E5D16638A5700FC8807 /* UIKit.framework */,
 				02B67E5F16638A5700FC8807 /* Foundation.framework */,
 				02B67E6116638A5700FC8807 /* CoreGraphics.framework */,
@@ -119,9 +127,9 @@
 			children = (
 				02B67E6C16638A5700FC8807 /* SYGAppDelegate.h */,
 				02B67E6D16638A5700FC8807 /* SYGAppDelegate.m */,
-				02B67E7516638A5700FC8807 /* SYGViewController.h */,
-				02B67E7616638A5800FC8807 /* SYGViewController.m */,
-				02B67E7816638A5800FC8807 /* SYGViewController.xib */,
+				02D8B58816639D93003FDCF7 /* SYGTableViewController.h */,
+				02D8B58916639D93003FDCF7 /* SYGTableViewController.m */,
+				02012E8616645780007B47F7 /* cellView.xib */,
 				02B67E6416638A5700FC8807 /* Supporting Files */,
 			);
 			path = usedRemind;
@@ -236,7 +244,7 @@
 				02B67E7016638A5700FC8807 /* Default.png in Resources */,
 				02B67E7216638A5700FC8807 /* Default@2x.png in Resources */,
 				02B67E7416638A5700FC8807 /* Default-568h@2x.png in Resources */,
-				02B67E7A16638A5800FC8807 /* SYGViewController.xib in Resources */,
+				02012E8716645780007B47F7 /* cellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +281,7 @@
 			files = (
 				02B67E6A16638A5700FC8807 /* main.m in Sources */,
 				02B67E6E16638A5700FC8807 /* SYGAppDelegate.m in Sources */,
-				02B67E7716638A5800FC8807 /* SYGViewController.m in Sources */,
+				02D8B58A16639D93003FDCF7 /* SYGTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +310,6 @@
 				02B67E6716638A5700FC8807 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		02B67E7816638A5800FC8807 /* SYGViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				02B67E7916638A5800FC8807 /* en */,
-			);
-			name = SYGViewController.xib;
 			sourceTree = "<group>";
 		};
 		02B67E8A16638A5800FC8807 /* InfoPlist.strings */ = {
@@ -446,6 +446,7 @@
 				02B67E9416638A5800FC8807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02B67E9516638A5800FC8807 /* Build configuration list for PBXNativeTarget "usedRemindTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +455,7 @@
 				02B67E9716638A5800FC8807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

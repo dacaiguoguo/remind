@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class SYGViewController;
-
 @interface SYGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) SYGViewController *viewController;
+@property (strong, nonatomic) UINavigationController *iNavViewController;
 
 @end
