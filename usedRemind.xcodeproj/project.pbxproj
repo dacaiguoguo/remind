@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		02012E8716645780007B47F7 /* cellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02012E8616645780007B47F7 /* cellView.xib */; };
+		02012E9F16648FC5007B47F7 /* SYGNormalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02012E9D16648FC5007B47F7 /* SYGNormalViewController.m */; };
+		02012EA016648FC5007B47F7 /* SYGNormalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02012E9E16648FC5007B47F7 /* SYGNormalViewController.xib */; };
+		02012EA216649047007B47F7 /* login_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 02012EA116649047007B47F7 /* login_04.png */; };
+		02012EA516649735007B47F7 /* UIImage+SYGImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 02012EA416649735007B47F7 /* UIImage+SYGImage.m */; };
+		02012EA7166498CB007B47F7 /* jek.png in Resources */ = {isa = PBXBuildFile; fileRef = 02012EA6166498CB007B47F7 /* jek.png */; };
 		02B67E5E16638A5700FC8807 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5D16638A5700FC8807 /* UIKit.framework */; };
 		02B67E6016638A5700FC8807 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E5F16638A5700FC8807 /* Foundation.framework */; };
 		02B67E6216638A5700FC8807 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E6116638A5700FC8807 /* CoreGraphics.framework */; };
@@ -39,6 +44,13 @@
 
 /* Begin PBXFileReference section */
 		02012E8616645780007B47F7 /* cellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellView.xib; sourceTree = "<group>"; };
+		02012E9C16648FC5007B47F7 /* SYGNormalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGNormalViewController.h; sourceTree = "<group>"; };
+		02012E9D16648FC5007B47F7 /* SYGNormalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGNormalViewController.m; sourceTree = "<group>"; };
+		02012E9E16648FC5007B47F7 /* SYGNormalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYGNormalViewController.xib; sourceTree = "<group>"; };
+		02012EA116649047007B47F7 /* login_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_04.png; sourceTree = "<group>"; };
+		02012EA316649735007B47F7 /* UIImage+SYGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SYGImage.h"; sourceTree = "<group>"; };
+		02012EA416649735007B47F7 /* UIImage+SYGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SYGImage.m"; sourceTree = "<group>"; };
+		02012EA6166498CB007B47F7 /* jek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jek.png; sourceTree = "<group>"; };
 		02B67E5916638A5700FC8807 /* usedRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usedRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B67E5D16638A5700FC8807 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02B67E5F16638A5700FC8807 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -129,7 +141,14 @@
 				02B67E6D16638A5700FC8807 /* SYGAppDelegate.m */,
 				02D8B58816639D93003FDCF7 /* SYGTableViewController.h */,
 				02D8B58916639D93003FDCF7 /* SYGTableViewController.m */,
+				02012E9C16648FC5007B47F7 /* SYGNormalViewController.h */,
+				02012E9D16648FC5007B47F7 /* SYGNormalViewController.m */,
+				02012E9E16648FC5007B47F7 /* SYGNormalViewController.xib */,
+				02012EA316649735007B47F7 /* UIImage+SYGImage.h */,
+				02012EA416649735007B47F7 /* UIImage+SYGImage.m */,
 				02012E8616645780007B47F7 /* cellView.xib */,
+				02012EA6166498CB007B47F7 /* jek.png */,
+				02012EA116649047007B47F7 /* login_04.png */,
 				02B67E6416638A5700FC8807 /* Supporting Files */,
 			);
 			path = usedRemind;
@@ -245,6 +264,9 @@
 				02B67E7216638A5700FC8807 /* Default@2x.png in Resources */,
 				02B67E7416638A5700FC8807 /* Default-568h@2x.png in Resources */,
 				02012E8716645780007B47F7 /* cellView.xib in Resources */,
+				02012EA016648FC5007B47F7 /* SYGNormalViewController.xib in Resources */,
+				02012EA216649047007B47F7 /* login_04.png in Resources */,
+				02012EA7166498CB007B47F7 /* jek.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +304,8 @@
 				02B67E6A16638A5700FC8807 /* main.m in Sources */,
 				02B67E6E16638A5700FC8807 /* SYGAppDelegate.m in Sources */,
 				02D8B58A16639D93003FDCF7 /* SYGTableViewController.m in Sources */,
+				02012E9F16648FC5007B47F7 /* SYGNormalViewController.m in Sources */,
+				02012EA516649735007B47F7 /* UIImage+SYGImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "SYGTableViewController.h"
+#import "SYGNormalViewController.h"
 @implementation SYGTableViewCell
 
 
@@ -72,7 +73,9 @@
     return self;
 }
 - (void)goNormalViewController:(id)sender{
-
+    SYGNormalViewController *aVC = [[SYGNormalViewController alloc] initWithNibName:@"SYGNormalViewController" bundle:nil];
+    [self.navigationController pushViewController:aVC animated:YES];
+    [aVC release];
 }
 - (void)setUpNavigationItem{
     //	Create an Add button
@@ -82,7 +85,7 @@
 	[addButtonItem release];
     //	Create an Add button
 	UIBarButtonItem *addlButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:
-                                      UIBarButtonSystemItemAdd target:self action:@selector(addEvent:)];
+                                      UIBarButtonSystemItemAdd target:self action:@selector(goNormalViewController:)];
 	self.navigationItem.leftBarButtonItem = addlButtonItem;
 	[addlButtonItem release];
 }
