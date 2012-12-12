@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SYGNormalViewController : UIViewController
+@interface SYGNormalViewController : UIViewController<UITextFieldDelegate>
 
 - (IBAction)goTableViewController:(id)sender;
 

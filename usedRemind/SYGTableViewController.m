@@ -191,7 +191,21 @@
     _detailViewController.allowsEditing = YES;
     [self.navigationController pushViewController:_detailViewController animated:YES];
 }
-
+- (void)addEvent:(id)sender{
+    EKEventEditViewController *addController = [[EKEventEditViewController alloc] initWithNibName:nil bundle:nil];
+	
+	// set the addController's event store to the current event store.
+	addController.eventStore = self.eventStore;
+	
+	// present EventsAddViewController as a modal view controller
+	[self presentViewController:addController animated:YES completion:^{
+        
+    }];
+	
+	addController.editViewDelegate = self;
+	[addController release];
+    
+}
 #pragma mark -
 #pragma mark UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
@@ -204,6 +218,8 @@
 }
 #pragma mark -
 #pragma mark EKEventEditViewDelegate
+
+
 - (void)eventEditViewController:(EKEventEditViewController *)controller didCompleteWithAction:(EKEventEditViewAction)action{
     
     NSError *error = nil;
@@ -271,20 +287,6 @@
 }
 
 
-- (void)addEvent:(id)sender{
-    EKEventEditViewController *addController = [[EKEventEditViewController alloc] initWithNibName:nil bundle:nil];
-	
-	// set the addController's event store to the current event store.
-	addController.eventStore = self.eventStore;
-	
-	// present EventsAddViewController as a modal view controller
-	[self presentViewController:addController animated:YES completion:^{
-        
-    }];
-	
-	addController.editViewDelegate = self;
-	[addController release];
-    
-}
+
 
 @end
