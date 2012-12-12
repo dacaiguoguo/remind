@@ -187,7 +187,20 @@
 
 
 #pragma mark - Table view delegate
-
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSError *error = nil;
+        EKEvent *thisEvent = [[_eventList objectAtIndex:indexPath.row] retain];
+        assert(thisEvent);
+        [self.eventStore removeEvent:thisEvent span:EKSpanThisEvent error:&error];
+        [_eventList removeObject:thisEvent];
+        [thisEvent release];
+        [self.tableView reloadData];
+    }
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     self.detailViewController = [[[EKEventViewController alloc] initWithNibName:nil bundle:nil] autorelease];
@@ -217,9 +230,7 @@
         [self initStore];
 	}
 }
-- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
-    
-}
+
 #pragma mark -
 #pragma mark EKEventEditViewDelegate
 
@@ -228,6 +239,7 @@
     
     NSError *error = nil;
 	EKEvent *thisEvent = controller.event;
+    //也可以手动用代码写EKEvent .
 //    EKEvent *newEvent = [EKEvent eventWithEventStore:self.eventStore];
 //    newEvent.title = @"newEvent";
 //    newEvent.startDate = [NSDate date];
