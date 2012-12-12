@@ -17,6 +17,9 @@
 @end
 
 @interface SYGTableViewController : UITableViewController<EKEventEditViewDelegate,UINavigationControllerDelegate>
+{
+    BOOL isAllowAccessEvent;
+}
 @property (nonatomic, retain) EKEventStore *eventStore;
 @property (nonatomic, retain) EKEventViewController *detailViewController;
 @property (nonatomic, retain) EKCalendar *defaultCalendar;

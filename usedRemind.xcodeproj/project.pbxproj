@@ -51,7 +51,7 @@
 		02012EA316649735007B47F7 /* UIImage+SYGImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SYGImage.h"; sourceTree = "<group>"; };
 		02012EA416649735007B47F7 /* UIImage+SYGImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SYGImage.m"; sourceTree = "<group>"; };
 		02012EA6166498CB007B47F7 /* jek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jek.png; sourceTree = "<group>"; };
-		02B67E5916638A5700FC8807 /* usedRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usedRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		02B67E5916638A5700FC8807 /* usedRemindb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usedRemindb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02B67E5D16638A5700FC8807 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		02B67E5F16638A5700FC8807 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02B67E6116638A5700FC8807 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,7 +115,7 @@
 		02B67E5A16638A5700FC8807 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				02B67E5916638A5700FC8807 /* usedRemind.app */,
+				02B67E5916638A5700FC8807 /* usedRemindb.app */,
 				02B67E8016638A5800FC8807 /* usedRemindTests.octest */,
 			);
 			name = Products;
@@ -204,7 +204,7 @@
 			);
 			name = usedRemind;
 			productName = usedRemind;
-			productReference = 02B67E5916638A5700FC8807 /* usedRemind.app */;
+			productReference = 02B67E5916638A5700FC8807 /* usedRemindb.app */;
 			productType = "com.apple.product-type.application";
 		};
 		02B67E7F16638A5800FC8807 /* usedRemindTests */ = {
@@ -401,7 +401,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "usedRemind/usedRemind-Prefix.pch";
 				INFOPLIST_FILE = "usedRemind/usedRemind-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -412,7 +412,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "usedRemind/usedRemind-Prefix.pch";
 				INFOPLIST_FILE = "usedRemind/usedRemind-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)b";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

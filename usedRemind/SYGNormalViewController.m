@@ -8,6 +8,7 @@
 
 #import "SYGNormalViewController.h"
 #import "UIImage+SYGImage.h"
+#import "SYGTableViewController.h"
 @interface SYGNormalViewController ()
 
 @end
@@ -45,4 +46,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [super dealloc];
+}
+- (IBAction)goTableViewController:(id)sender {
+    SYGTableViewController *aVC = [[SYGTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:aVC animated:YES];
+    [aVC release];
+}
 @end

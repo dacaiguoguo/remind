@@ -10,4 +10,6 @@
 
 @interface SYGNormalViewController : UIViewController
 
+- (IBAction)goTableViewController:(id)sender;
+
 @end

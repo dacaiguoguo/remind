@@ -9,7 +9,7 @@
 #import "SYGAppDelegate.h"
 
 #import "SYGTableViewController.h"
-
+#import "SYGNormalViewController.h"
 @implementation SYGAppDelegate
 
 - (void)dealloc
@@ -23,7 +23,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    SYGTableViewController *aViewController = [[[SYGTableViewController alloc] initWithStyle:UITableViewStylePlain] autorelease];
+    SYGNormalViewController *aViewController = [[[SYGNormalViewController alloc] initWithNibName:@"SYGNormalViewController" bundle:nil] autorelease];
     self.iNavViewController = [[[UINavigationController alloc] initWithRootViewController:aViewController] autorelease];
     self.window.rootViewController = self.iNavViewController;
     [self.window makeKeyAndVisible];

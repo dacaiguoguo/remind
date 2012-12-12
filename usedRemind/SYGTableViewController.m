@@ -26,8 +26,17 @@
 @synthesize defaultCalendar = _defaultCalendar;
 @synthesize detailViewController = _detailViewController;
 @synthesize eventList = _eventList;
-
+- (void)dealloc{
+    [super dealloc];
+    [_eventStore release];
+    [_defaultCalendar release];
+    [_detailViewController release];
+    [_eventList release];
+}
 - (void)initStore{
+    if (!isAllowAccessEvent) {
+        return;
+    }
     dispatch_queue_t fetwork_queue;
     fetwork_queue = dispatch_queue_create("com.guoguo.me", nil);
     
@@ -39,82 +48,98 @@
         NSDate *oneDayAgo = [calendar dateByAddingComponents:onedayAgoComponents
                                                       toDate:[NSDate date]
                                                      options:0];
-        
+        [onedayAgoComponents release];
         NSDateComponents *oneYearFromNowComponents = [[NSDateComponents alloc] init];
         oneYearFromNowComponents.year = 1;
         NSDate *oneYearFromNow = [calendar dateByAddingComponents:oneYearFromNowComponents
                                                            toDate:[NSDate date]
                                                           options:0];
-        
+        [oneYearFromNowComponents release];
+//        [self.eventStore calendarsForEntityType:EKEntityTypeEvent]
         NSPredicate *predicate = [_eventStore predicateForEventsWithStartDate:oneDayAgo
                                                                       endDate:oneYearFromNow
                                                                     calendars:nil];
         NSArray *tempArray  = [[_eventStore eventsMatchingPredicate:predicate] retain];
-        
         // 回到主线程
         dispatch_async(dispatch_get_main_queue(), ^{
-
             [self.eventList removeAllObjects];
             [self.eventList addObjectsFromArray:tempArray];
+            [tempArray release];
             [self.refreshControl endRefreshing];
             [self.tableView reloadData];
         });
-        
+        dispatch_release(fetwork_queue);
     });
+    
 }
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self) {
         self.title = @"Event List";
-        // Custom initialization
     }
     return self;
 }
+
+
 - (void)goNormalViewController:(id)sender{
     SYGNormalViewController *aVC = [[SYGNormalViewController alloc] initWithNibName:@"SYGNormalViewController" bundle:nil];
     [self.navigationController pushViewController:aVC animated:YES];
     [aVC release];
 }
+
+
 - (void)setUpNavigationItem{
     //	Create an Add button
 	UIBarButtonItem *addButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:
                                       UIBarButtonSystemItemAdd target:self action:@selector(addEvent:)];
 	self.navigationItem.rightBarButtonItem = addButtonItem;
 	[addButtonItem release];
-    //	Create an Add button
-	UIBarButtonItem *addlButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:
-                                      UIBarButtonSystemItemAdd target:self action:@selector(goNormalViewController:)];
-	self.navigationItem.leftBarButtonItem = addlButtonItem;
-	[addlButtonItem release];
+//    //	Create an Add button
+//	UIBarButtonItem *addlButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:
+//                                       UIBarButtonSystemItemAdd target:self action:@selector(goNormalViewController:)];
+//	self.navigationItem.leftBarButtonItem = addlButtonItem;
+//	[addlButtonItem release];
 }
+
+
 - (void)setUpRefeshControl{
     [self.tableView registerNib:[UINib nibWithNibName:@"cellView" bundle:nil] forCellReuseIdentifier:@"displayCell"];
     
-    self.refreshControl = [[UIRefreshControl alloc]init];
+    self.refreshControl = [[[UIRefreshControl alloc]init] autorelease];
     self.refreshControl.tintColor = [UIColor blueColor];
     
-    self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"下拉刷新"];
+    NSAttributedString *attString = [[NSAttributedString alloc]initWithString:@"下拉刷新"];
+    self.refreshControl.attributedTitle =attString;
+    [attString release];
     
-    [self.refreshControl addTarget:self action:@selector(RefreshViewControlEventValueChanged) forControlEvents:UIControlEventValueChanged];
+    [self.refreshControl addTarget:self
+                            action:@selector(RefreshViewControlEventValueChanged)
+                  forControlEvents:UIControlEventValueChanged];
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.navigationController.delegate = self;
-    self.eventStore = [[EKEventStore alloc] init];
-    self.defaultCalendar = [self.eventStore defaultCalendarForNewEvents];
-
+    self.eventStore = [[[EKEventStore alloc] init] autorelease];
+    
     [_eventStore requestAccessToEntityType:EKEntityTypeEvent completion:^(BOOL granted, NSError *error) {
-        NSLog(@"%@",granted?@"YES":@"NO");
+        NSString *aRet = granted?@"用户同意了":@"用户不同意";
+        NSLog(@"%@",aRet);
+        isAllowAccessEvent = granted;
+        if (granted) {
+            self.defaultCalendar = [self.eventStore defaultCalendarForNewEvents];
+            [self initStore];
+        }
+        
+        
     }];
-
     [self setUpRefeshControl];
     [self setUpNavigationItem];
     self.eventList = [NSMutableArray array];
-    [self initStore];
-
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -167,26 +192,28 @@
     [self.navigationController pushViewController:_detailViewController animated:YES];
 }
 
-#pragma mark - 
+#pragma mark -
 #pragma mark UINavigationControllerDelegate
 - (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
     if (viewController == self) {
         [self initStore];
 	}
 }
-
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated{
+    
+}
 #pragma mark -
 #pragma mark EKEventEditViewDelegate
 - (void)eventEditViewController:(EKEventEditViewController *)controller didCompleteWithAction:(EKEventEditViewAction)action{
-
+    
     NSError *error = nil;
 	EKEvent *thisEvent = controller.event;
-    EKEvent *newEvent = [EKEvent eventWithEventStore:self.eventStore];
-    newEvent.title = @"newEvent";
-    newEvent.startDate = [NSDate date];
-    newEvent.endDate = [NSDate dateWithTimeIntervalSinceNow:8840];
-    newEvent.calendar = thisEvent.calendar;
-    thisEvent = newEvent;
+//    EKEvent *newEvent = [EKEvent eventWithEventStore:self.eventStore];
+//    newEvent.title = @"newEvent";
+//    newEvent.startDate = [NSDate date];
+//    newEvent.endDate = [NSDate dateWithTimeIntervalSinceNow:8840];
+//    newEvent.calendar = thisEvent.calendar;
+//    thisEvent = newEvent;
     switch (action) {
 		case EKEventEditViewActionCanceled:
 			// Edit action canceled, do nothing.
@@ -221,7 +248,7 @@
 	}
 	// Dismiss the modal view controller
 	[controller dismissViewControllerAnimated:YES completion:^{
-        
+        [self initStore];
     }];
     
 }
@@ -232,7 +259,15 @@
 }
 
 - (void)RefreshViewControlEventValueChanged{
-    [self initStore];
+    if (isAllowAccessEvent) {
+        [self initStore];
+        
+    }else{
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:@"用户不允许访问日历" delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles: nil];
+        [alert show];
+        [alert release];
+        [self.refreshControl endRefreshing];
+    }
 }
 
 
