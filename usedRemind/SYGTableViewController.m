@@ -14,6 +14,7 @@
 - (void)dealloc {
     [_eventTitle release];
     [_eventLocation release];
+    [_startDate release];
     [super dealloc];
 }
 @end
@@ -60,6 +61,7 @@
                                                                       endDate:oneYearFromNow
                                                                     calendars:nil];
         NSArray *tempArray  = [[_eventStore eventsMatchingPredicate:predicate] retain];
+        [tempArray sortedArrayUsingSelector:@selector(compareStartDateWithEvent:)];
         // 回到主线程
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.eventList removeAllObjects];
@@ -149,7 +151,9 @@
 }
 
 #pragma mark - Table view data source
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 114;
+}
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
@@ -173,13 +177,13 @@
     
     cell.eventLocation.text = aEvent.location;
     cell.eventTitle.text = aEvent.title;
+    cell.startDate.text =[NSString stringWithFormat:@"%@",aEvent.startDate];
+#warning  cell.startDate.text这里要转时区的。。。
     // Configure the cell...
     
     return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 84;
-}
+
 
 
 #pragma mark - Table view delegate

@@ -13,6 +13,7 @@
 @interface SYGTableViewCell : UITableViewCell
 @property (retain, nonatomic) IBOutlet UILabel *eventTitle;
 @property (retain, nonatomic) IBOutlet UILabel *eventLocation;
+@property (retain, nonatomic) IBOutlet UILabel *startDate;
 
 @end
 
