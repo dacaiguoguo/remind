@@ -30,6 +30,7 @@
 		02B67E9916638A6C00FC8807 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B67E9816638A6C00FC8807 /* EventKit.framework */; };
 		02D8B581166398E7003FDCF7 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D8B580166398E7003FDCF7 /* EventKitUI.framework */; };
 		02D8B58A16639D93003FDCF7 /* SYGTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D8B58916639D93003FDCF7 /* SYGTableViewController.m */; };
+		02EC93111678873E0090DBCD /* 屏幕快照 2012-12-12 下午5.34.02.png in Resources */ = {isa = PBXBuildFile; fileRef = 02EC93101678873E0090DBCD /* 屏幕快照 2012-12-12 下午5.34.02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		02D8B580166398E7003FDCF7 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		02D8B58816639D93003FDCF7 /* SYGTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGTableViewController.h; sourceTree = "<group>"; };
 		02D8B58916639D93003FDCF7 /* SYGTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGTableViewController.m; sourceTree = "<group>"; };
+		02EC93101678873E0090DBCD /* 屏幕快照 2012-12-12 下午5.34.02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2012-12-12 下午5.34.02.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		02B67E4E16638A5700FC8807 = {
 			isa = PBXGroup;
 			children = (
+				02EC93101678873E0090DBCD /* 屏幕快照 2012-12-12 下午5.34.02.png */,
 				02B67E6316638A5700FC8807 /* usedRemind */,
 				02B67E8716638A5800FC8807 /* usedRemindTests */,
 				02B67E5C16638A5700FC8807 /* Frameworks */,
@@ -267,6 +270,7 @@
 				02012EA016648FC5007B47F7 /* SYGNormalViewController.xib in Resources */,
 				02012EA216649047007B47F7 /* login_04.png in Resources */,
 				02012EA7166498CB007B47F7 /* jek.png in Resources */,
+				02EC93111678873E0090DBCD /* 屏幕快照 2012-12-12 下午5.34.02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
