@@ -7,12 +7,13 @@
 //
 
 #import "SYGAppDelegate.h"
-
+#import "SYGViewController.h"
 @implementation SYGAppDelegate
 
 - (void)dealloc
 {
     [_window release];
+    [_iNav release];
     [super dealloc];
 }
 
@@ -20,6 +21,10 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
+    SYGViewController *iVC = [[SYGViewController alloc] initWithNibName:@"SYGViewController" bundle:nil];
+    self.iNav = [[[UINavigationController alloc] initWithRootViewController:iVC] autorelease];
+    [iVC release];
+    self.window.rootViewController = _iNav;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

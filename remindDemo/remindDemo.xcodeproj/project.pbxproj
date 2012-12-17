@@ -21,6 +21,12 @@
 		02F3A1B4167EC1110086E9C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F3A195167EC1100086E9C4 /* Foundation.framework */; };
 		02F3A1BC167EC1110086E9C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 02F3A1BA167EC1110086E9C4 /* InfoPlist.strings */; };
 		02F3A1BF167EC1110086E9C4 /* remindDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F3A1BE167EC1110086E9C4 /* remindDemoTests.m */; };
+		02F84C45167F17D10055B9BE /* SYGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F84C43167F17D10055B9BE /* SYGViewController.m */; };
+		02F84C46167F17D10055B9BE /* SYGViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F84C44167F17D10055B9BE /* SYGViewController.xib */; };
+		02F84C49167F18BD0055B9BE /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F84C48167F18BD0055B9BE /* EventKit.framework */; };
+		02F84C4B167F18C30055B9BE /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02F84C4A167F18C30055B9BE /* EventKitUI.framework */; };
+		02F84C4D167F19000055B9BE /* SYGCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02F84C4C167F19000055B9BE /* SYGCustomCell.xib */; };
+		02F84C50167F196D0055B9BE /* SYGTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F84C4F167F196D0055B9BE /* SYGTableViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,14 @@
 		02F3A1BB167EC1110086E9C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		02F3A1BD167EC1110086E9C4 /* remindDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = remindDemoTests.h; sourceTree = "<group>"; };
 		02F3A1BE167EC1110086E9C4 /* remindDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = remindDemoTests.m; sourceTree = "<group>"; };
+		02F84C42167F17D10055B9BE /* SYGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGViewController.h; sourceTree = "<group>"; };
+		02F84C43167F17D10055B9BE /* SYGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGViewController.m; sourceTree = "<group>"; };
+		02F84C44167F17D10055B9BE /* SYGViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYGViewController.xib; sourceTree = "<group>"; };
+		02F84C48167F18BD0055B9BE /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		02F84C4A167F18C30055B9BE /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		02F84C4C167F19000055B9BE /* SYGCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SYGCustomCell.xib; sourceTree = "<group>"; };
+		02F84C4E167F196C0055B9BE /* SYGTableViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYGTableViewViewController.h; sourceTree = "<group>"; };
+		02F84C4F167F196D0055B9BE /* SYGTableViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYGTableViewViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F84C4B167F18C30055B9BE /* EventKitUI.framework in Frameworks */,
+				02F84C49167F18BD0055B9BE /* EventKit.framework in Frameworks */,
 				02F3A194167EC1100086E9C4 /* UIKit.framework in Frameworks */,
 				02F3A196167EC1100086E9C4 /* Foundation.framework in Frameworks */,
 				02F3A198167EC1100086E9C4 /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +117,8 @@
 		02F3A192167EC1100086E9C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				02F84C4A167F18C30055B9BE /* EventKitUI.framework */,
+				02F84C48167F18BD0055B9BE /* EventKit.framework */,
 				02F3A193167EC1100086E9C4 /* UIKit.framework */,
 				02F3A195167EC1100086E9C4 /* Foundation.framework */,
 				02F3A197167EC1100086E9C4 /* CoreGraphics.framework */,
@@ -114,6 +132,12 @@
 			children = (
 				02F3A1A2167EC1100086E9C4 /* SYGAppDelegate.h */,
 				02F3A1A3167EC1100086E9C4 /* SYGAppDelegate.m */,
+				02F84C42167F17D10055B9BE /* SYGViewController.h */,
+				02F84C43167F17D10055B9BE /* SYGViewController.m */,
+				02F84C4E167F196C0055B9BE /* SYGTableViewViewController.h */,
+				02F84C4F167F196D0055B9BE /* SYGTableViewViewController.m */,
+				02F84C44167F17D10055B9BE /* SYGViewController.xib */,
+				02F84C4C167F19000055B9BE /* SYGCustomCell.xib */,
 				02F3A19A167EC1100086E9C4 /* Supporting Files */,
 			);
 			path = remindDemo;
@@ -228,6 +252,8 @@
 				02F3A1A6167EC1100086E9C4 /* Default.png in Resources */,
 				02F3A1A8167EC1100086E9C4 /* Default@2x.png in Resources */,
 				02F3A1AA167EC1100086E9C4 /* Default-568h@2x.png in Resources */,
+				02F84C46167F17D10055B9BE /* SYGViewController.xib in Resources */,
+				02F84C4D167F19000055B9BE /* SYGCustomCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +290,8 @@
 			files = (
 				02F3A1A0167EC1100086E9C4 /* main.m in Sources */,
 				02F3A1A4167EC1100086E9C4 /* SYGAppDelegate.m in Sources */,
+				02F84C45167F17D10055B9BE /* SYGViewController.m in Sources */,
+				02F84C50167F196D0055B9BE /* SYGTableViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +456,7 @@
 				02F3A1C4167EC1110086E9C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02F3A1C5167EC1110086E9C4 /* Build configuration list for PBXNativeTarget "remindDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +465,7 @@
 				02F3A1C7167EC1110086E9C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

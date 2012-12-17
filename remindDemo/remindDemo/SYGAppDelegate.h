@@ -11,5 +11,5 @@
 @interface SYGAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UINavigationController *iNav;
 @end
