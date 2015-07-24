@@ -18,5 +18,6 @@ from django.contrib import admin
 from polls.views import home
 urlpatterns = [
     url(r'^$', home),
+    url(r'^blog/', include('polls.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]
