@@ -1,0 +1,45 @@
+#启动
+python manage.py runserver
+
+＃vpn 上启动服务
+python manage.py runfcgi method=prefork host=127.0.0.1 port=9001
+＃创建App
+python manage.py startapp polls
+＃同步数据库
+python manage.py makemigrations polls
+＃合并数据
+python manage.py migrate
+＃创建超级管理员
+python manage.py createsuperuser
+＃导出数据 导入数据
+python manage.py dumpdata appname > appname.json
+python manage.py loaddata appname.json
+＃django 项目环境终端
+python manage.py shell
+＃更多命令
+python manage.py 可以看到详细的列表，在忘记了名称的时候特别有用。
+＃python static目录
+/usr/lib/python2.7/site-packages/django/contrib/admin/static/
+＃查看python进程
+ps -A | grep python
+＃杀掉全部python进程
+killall python
+＃安装ipython
+pip install ipython
+＃查找python目录
+find / -name python2.7 -type d
+
+运行django脚本
+runlvmama.sh
+kill -9 `cat /tmp/django.pid`
+#killall python
+echo 'restart django....'
+
+python /tmp/lvmama/manage.py runfcgi maxchildren=8  maxspare=3 minspare=1 method=prefork  pidfile=/tmp/django.pid host=127.0.0.1 port=9001 outlog=/tmp/dj.out errlog=/tmp/dj.error
+
+#使用mysql时要安装
+yum install MySQL-python
+
+#报错 "Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock
+＃要 为 mysql.sock 加个连接，比如说实际的mysql.sock在 /tmp/ 下，则
+#ln -s /tmp/mysql.sock /var/lib/mysql/mysql.sock即可
