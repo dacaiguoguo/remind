@@ -1,5 +1,5 @@
 from django.conf.urls import *
-from polls.views import home
+from blog.views import home
 
 
 urlpatterns = patterns('',
