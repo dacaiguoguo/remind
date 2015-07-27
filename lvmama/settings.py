@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'lvmama.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django',
-        'USER':'root',
-        'PASSWORD':'511guoguoMySQL',
-        'HOST':'localhost',
-        'PORT':''
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
