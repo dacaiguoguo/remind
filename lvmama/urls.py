@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^sayhello/', say_hello),
     url(r'^tmpcurrenttime/', temp_current_time),
     url(r'^rendercurrenttime/',render_current_time),
-    url(r'^localusetime',localusetime)
+    url(r'^localusetime',localusetime),
+    url(r'^archive',archiveblog)
 ]

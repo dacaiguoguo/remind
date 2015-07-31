@@ -3,7 +3,7 @@ from django.shortcuts import render, render_to_response
 from django.http import HttpResponse
 from django.template import Template, Context
 from django.template.loader import get_template
-
+from blog.models import *
 import datetime
 # Create your views here.
 def home(requset):
@@ -34,3 +34,7 @@ def localusetime(request):
     current_date = datetime.datetime.now()
     return render_to_response('hello.html', {'current_date':locals()})
 
+def archiveblog(request):
+    """docstring for archiveblog"""
+    n = BlogPost.objects.all()
+    return render_to_response('archive.html',{'posts':n})
